@@ -4,7 +4,7 @@
 class Zurigrad < Formula
   desc "Zurigrad is a small MacOS status bar app showing the current temperature of the lake Zurich"
   homepage "https://github.com/gianhiltbrunner/Zurigrad"
-  url "https://github.com/gianhiltbrunner/Zurigrad/releases/download/b2.0/Zurigrad.app.zip"
+  url "https://github.com/gianhiltbrunner/Zurigrad/releases/download/b2.0/zurigrad.tar.gz"
   sha256 "8bafdbf779f303ed5a24b4ec60ada9d98e86aeed66b8f51704719a7d21bc8d7e"
   license "MIT"
 
@@ -14,7 +14,6 @@ class Zurigrad < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    #system "unzip", "Zurigrad.app.zip"
     bin.install "Zurigrad.app"
   end
 

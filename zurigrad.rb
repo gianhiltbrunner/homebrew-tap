@@ -5,7 +5,7 @@ class Zurigrad < Formula
   desc "Zurigrad is a small MacOS status bar app showing the current temperature of the lake Zurich"
   homepage "https://github.com/gianhiltbrunner/Zurigrad"
   url "https://github.com/gianhiltbrunner/Zurigrad/releases/download/b2.0/zurigrad.tar.gz"
-  sha256 "8bafdbf779f303ed5a24b4ec60ada9d98e86aeed66b8f51704719a7d21bc8d7e"
+  sha256 "f005dd4e246dec4d5bc5b69453928d1db190699a5bccba6f45008bc414d76ce5"
   license "MIT"
 
   # depends_on "cmake" => :build

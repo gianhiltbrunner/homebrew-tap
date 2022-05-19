@@ -14,7 +14,7 @@ class Zurigrad < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "unzip", "Zurigrad.app.zip"
+    #system "unzip", "Zurigrad.app.zip"
     bin.install "Zurigrad.app"
   end
 

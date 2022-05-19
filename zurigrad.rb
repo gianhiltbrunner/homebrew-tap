@@ -4,8 +4,8 @@
 class Zurigrad < Formula
   desc "Zurigrad is a small MacOS status bar app showing the current temperature of the lake Zurich"
   homepage "https://github.com/gianhiltbrunner/Zurigrad"
-  url "https://github.com/gianhiltbrunner/Zurigrad/releases/download/b2.0/zurigrad.tar.gz"
-  sha256 "078573d6797099bedc144c81d4137a32741865ffd9821058b6210cfe6f0b8c32"
+  url "https://github.com/gianhiltbrunner/Zurigrad/archive/refs/tags/b2.0.tar.gz"
+  sha256 "21a3a1e57a0249df2240d75971537ae95cb11482"
   license "MIT"
 
   # depends_on "cmake" => :build
@@ -14,7 +14,9 @@ class Zurigrad < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    bin.install "Zurigrad.app"
+    system "swift", "build",
+        "--configuration", "release"
+    bin.install '.build/release/Zurigrad'
   end
 
   test do

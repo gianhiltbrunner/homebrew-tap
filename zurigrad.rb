@@ -15,7 +15,7 @@ class Zurigrad < Formula
     # Remove unrecognized options if warned by configure
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     system "unzip", "Zurigrad.app.zip"
-    bin.install "Zurigrad.app" => "Zurigrad"
+    bin.install "Zurigrad.app"
   end
 
   test do

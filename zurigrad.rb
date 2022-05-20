@@ -16,6 +16,7 @@ class Zurigrad < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     system "unzip", "Zurigrad.app.zip"
     bin.install "Zurigrad.app"
+    bin.install_symlink "Zurigrad.app"
   end
 
   test do
